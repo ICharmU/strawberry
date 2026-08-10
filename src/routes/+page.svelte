@@ -1,14 +1,30 @@
 <script>
   import HomeNavbar from "$lib/navbar/HomeNavbar.svelte";
+  import About from "$lib/home/About.svelte";
+  import Contact from "$lib/home/Contact.svelte";
+  import Education from "$lib/home/Education.svelte";
+  import Projects from "$lib/home/Projects.svelte";
+  import Skills from "$lib/home/Skills.svelte";
+	import WorkExperience from "$lib/home/WorkExperience.svelte";
+
+  const tabNames = [
+    "About", 
+    "WorkExperience", 
+    "Projects", 
+    "Education", 
+    "Skills", 
+    "Contact"
+  ];
 </script>
 
 <style>
-  h1 {
-    font-size: 36px;
-  }
+
 </style>
 
-<HomeNavbar/>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
-
+<HomeNavbar tabNames={tabNames}/>
+<About id={tabNames[0]} name="Sean Harmon"/>
+<WorkExperience id={tabNames[1]} name="Work Experience"/>
+<Projects id={tabNames[2]} name={tabNames[2]}/>
+<Education id={tabNames[3]} name={tabNames[3]}/>
+<Skills id={tabNames[4]} name={tabNames[4]}/>
+<Contact id={tabNames[5]} name={tabNames[5]}/>
