@@ -3,13 +3,9 @@
 </script>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid red;
-  }
 
-  .subtitle, .desc {
+
+  .desc {
     text-align: center;
   }
 </style>

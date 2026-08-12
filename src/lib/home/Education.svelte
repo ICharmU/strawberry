@@ -16,6 +16,21 @@
   ];
 </script>
 
+<style>
+  .inst-desc {
+    text-align: center;
+  }
+  
+  .inst-title {
+    text-align: center;
+  }
+
+  .inst-name, .degree-type {
+    font-weight: 600;
+    text-align: center;
+  }
+</style>
+
 <div id={props.id}>
   <div class="subtitle">
     <h2>
@@ -23,6 +38,27 @@
     </h2>
   </div>
   <div class="institutions">
+    <div id="ucsd">
+      <div class="inst-title">
+        <div class="inst-name">
+          University of California, San Diego
+        </div>
+        <div class="degree-type">
+          B.S. Data Science
+        </div>
+        <div class="inst-date">
+          August 2024-Present (expected March 2028)
+        </div>
+      </div>
+      <div class="inst-desc">
+        <p>
+          Activities: {ucsd_activities.join(", ")}
+        </p>
+        <p>
+          Coursework: {ucsd_coursework.join(", ")}
+        </p>
+      </div>
+    </div>
     <div id="lapc">
       <div class="inst-title">
         <div class="inst-name">
@@ -37,27 +73,6 @@
       </div>
       <div class="inst-desc">
         Coursework: Linear Algebra, Multivariable Calculus
-      </div>
-    </div>
-    <div id="ucsd">
-      <div class="inst-title">
-        <div class="inst-name">
-          University of California, San Diego
-        </div>
-        <div class="degree-type">
-          B.S. Data Science
-        </div>
-        <div class="inst-date">
-          08/2024-Present (expected March 2028)
-        </div>
-      </div>
-      <div class="inst-desc">
-        <p>
-          Activities: {ucsd_activities.join(", ")}
-        </p>
-        <p>
-          Coursework: {ucsd_coursework.join(", ")}
-        </p>
       </div>
     </div>
   </div>

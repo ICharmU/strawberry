@@ -21,19 +21,15 @@
 </script>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: column;
-
-    border: 2px solid red;
-  }
-
   .jobs {
     display: flex;
     flex-direction: column;
   }
 
-  .subtitle, 
+  .job-title, .company {
+    font-weight: 600;
+  }
+
   .job-title, .company, .tools, .description {
     text-align: center;
   }

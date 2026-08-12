@@ -8,6 +8,14 @@
   const email = "t2harmon [at] ucsd [dot] edu";
 </script>
 
+<style>
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+</style>
+
 <div id={props.id}>
   <div class="subtitle">
     <h2>
@@ -27,7 +35,3 @@
     </div>
   </div>
 </div>
-
-<style>
-
-</style>

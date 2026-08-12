@@ -47,6 +47,17 @@
   ];
 </script>
 
+<style>
+  .skill-subtitle {
+    text-align: center;
+    font-weight: 600;
+  }
+
+  .skill-desc {
+    text-align: center;
+  }
+</style>
+
 <div id={props.id}>
   <div class="subtitle">
     <h2>
@@ -55,19 +66,24 @@
   </div>
   <div class="skills">
     <div id="languages">
-      Languages: {languages.join(", ")}
+      <h3 class="skill-subtitle">Languages</h3>
+      <p class="skill-desc">{languages.join(", ")}</p>
     </div>
     <div id="data-processing">
-      Data Processing: {dataProcessing.join(", ")}
+      <h3 class="skill-subtitle">Data Processing</h3>
+      <p class="skill-desc">{dataProcessing.join(", ")}</p>
     </div>
     <div id="ai-ml">
-      AI/ML: {aiml.join(", ")}
+      <h3 class="skill-subtitle">AI/ML</h3>
+      <p class="skill-desc">{aiml.join(", ")}</p>
     </div>
     <div id="analytics">
-      Analytics: {analytics.join(", ")}
+      <h3 class="skill-subtitle">Analytics</h3>
+      <p class="skill-desc">{analytics.join(", ")}</p>
     </div>
     <div id="soft">
-      Soft Skills: {soft.join(", ")}
+      <h3 class="skill-subtitle">Soft Skills</h3>
+      <p class="skill-desc">{soft.join(", ")}</p>
     </div>
   </div>
 </div>
