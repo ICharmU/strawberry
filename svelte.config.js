@@ -3,10 +3,14 @@ import adapter from '@adapterjs/adapter-static';
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    // TODO: Custom fallback page. Defaults to GitHub 404 page
-    // adapter: adapter({
-    //   fallback: '404.html'
-    // }),
+    // adapter prerenders static pages
+    adapter: adapter({
+      pages: 'build',
+      assets: 'build',
+      fallback: undefined,
+      precompress: false,
+      strict: true,
+    }),
     paths: {
       base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
     }
