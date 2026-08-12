@@ -3,12 +3,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: 'master'
-    
-  workflow_dispatch:
-
-permissions:
-  pages: write
-  id-token: write
 
 jobs:
   build_site:
