@@ -88,7 +88,7 @@
   {#if initialized}
     <Particles
       id="tsparticles"
-      class="absolute inset-0 z-0"
+      class="absolute inset-0 z-0 overflow-hidden"
       options={particlesOptions}
     />
   {/if}

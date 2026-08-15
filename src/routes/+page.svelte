@@ -35,8 +35,8 @@
 
 <HomeNavbar tabNames={tabNames}/>
 <About id={tabNames[0]} name="Sean Harmon"/>
-<!-- <WorkExperience id={tabNames[1].replace(" ", "")} name="Work Experience"/>
+<WorkExperience id={tabNames[1].replace(" ", "")} name="Work Experience"/>
 <Projects id={tabNames[2]} name={tabNames[2]}/>
 <Education id={tabNames[3]} name={tabNames[3]}/>
 <Skills id={tabNames[4]} name={tabNames[4]}/>
-<Contact id={tabNames[5]} name={tabNames[5]}/> -->
+<Contact id={tabNames[5]} name={tabNames[5]}/>
