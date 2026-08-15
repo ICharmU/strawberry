@@ -28,16 +28,6 @@
     margin-bottom: 1em;
   }
 
-  /* .job-title, .company, .tools, .description {
-    text-align: center;
-  } */
-
-  .subtitle {
-    font-size: clamp(2rem, 4vw, 6rem);
-    text-align: center;
-    font-weight: 800;
-  }
-
   .sec {
     width: clamp(200px, 50%, 1080px);
     margin: 0 auto;
@@ -77,9 +67,10 @@
 
 </style>
 
-<div id={props.id} class="relative z-50 sec mx:40 flex flex-col mb-20">
-  <div class="subtitle justify-items-center">
-    <h2 class="fairfax">
+<div id={props.id}><br></div>
+<div class="relative z-50 sec mx:40 flex flex-col mb-20">
+  <div class="subtitle">
+    <h2>
       {props.name}
     </h2>
   </div>
