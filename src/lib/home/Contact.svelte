@@ -9,29 +9,45 @@
 </script>
 
 <style>
-  .contact {
+  .contact, .contact-desc {
+    font-family: 'Fairfax';
+    font-size: 2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
+
+  .contact > p {
+    margin-left: 3em;
+    margin-right: 3em;
+    font-size: 1.25em;
+  }
+
+  .contact a {
+    color: rgb(0, 86, 247);
+    font-weight: 600;
+  }
+
 </style>
 
-<div id={props.id}>
-  <div class="subtitle">
+<div id={props.id} class="mt-12 mb-18 relative w-full max-w-5xl mx-auto">
+  <br><br>
+  <div class="subtitle mb-8">
     <h2>
       {props.name}
     </h2>
   </div>
+  <div class="contact-desc mt8 mb-12">
+    <p>If you're interested in working on a project together, feel free to reach out!</p>
+  </div>
   <div class="contact">
     {#each Object.entries(links) as [contact_method, hyperlink] (contact_method)}
-      <div>
-        <p>
-          <a href={hyperlink} target="_blank" rel="noopener noreferrer external">{contact_method}</a>
-        </p>
-      </div>
+      <p class="underline">
+        <a href={hyperlink} target="_blank" rel="noopener noreferrer external">{contact_method}</a>
+      </p>
     {/each}
-    <div>
-      <p>{email}</p>
-    </div>
+  </div>
+  <div class="contact">
+    <p>{email}</p>
   </div>
 </div>

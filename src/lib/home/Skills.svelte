@@ -68,6 +68,7 @@
 </style>
 
 <div id={props.id} class="mt-32 flex flex-col relative w-full max-w-5xl mx-auto">
+  <br><br>
   <div class="subtitle mb-12">
     <h2>
       {props.name}
