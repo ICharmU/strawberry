@@ -18,7 +18,7 @@
     "BeautifulSoup",
     "Pandas",
     "numpy",
-    "matplotlib/seaborn",
+    "mpl",
     "Plotly",
   ];
   const aiml: string[] = [
@@ -30,36 +30,45 @@
     "PyTorch",
   ];
   const analytics: string[] = [
+    "Power BI", 
     "Data Visualization",
     "EDA",
     "Bootstrap",
     "Feature Extraction",
-    "Significance Testing",
-    "Causal Inference",
   ];
   const soft: string[] = [
     "Customer Service",
     "Project Management",
     "Communication",
-    "Quick Learner",
-    "Detail Oriented",
     "Persistent",
   ];
 </script>
 
 <style>
+  .skills h3 {
+    font-family: 'Fairfax';
+    font-size: 2.5em;
+  }
+
+  p {
+    font-family: 'Fairfax';
+    font-size: 1.8em;
+  }
+
+  .skills > div:not(:first-child) {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
   .skill-subtitle {
-    text-align: center;
     font-weight: 600;
   }
 
-  .skill-desc {
-    text-align: center;
-  }
+
 </style>
 
-<div id={props.id}>
-  <div class="subtitle">
+<div id={props.id} class="mt-32 flex flex-col relative w-full max-w-5xl mx-auto">
+  <div class="subtitle mb-12">
     <h2>
       {props.name}
     </h2>

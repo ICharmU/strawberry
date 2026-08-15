@@ -87,7 +87,7 @@
       <p>
         As part of the WxMap team I support agent, MCP and backend development. 
         I work on aggregating weather forecast data with an agent harness to automatically pull data and develop analyses which guide wildfire prevention measures.
-        I have lead system design and containerization efforts, as well as the transition from Conda to Pixi for cross-platform dependency management.
+        I lead system design and containerization efforts, as well as the transition from Conda to Pixi for cross-platform dependency management.
       </p>
     </div>
   </div>

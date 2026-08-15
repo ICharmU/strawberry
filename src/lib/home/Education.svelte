@@ -66,10 +66,10 @@
   .inst-desc > h4 {
     color: rgb(6, 51, 71);
   }
-
 </style>
 
 <div id={props.id} class="flex flex-col relative w-full max-w-5xl mx-auto">
+  <br><br>
   <div class="subtitle">
     <h2>
       {props.name}
