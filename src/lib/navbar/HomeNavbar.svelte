@@ -1,35 +1,17 @@
-<script>
+<script lang="ts">
+  import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from "flowbite-svelte";
   import { resolve } from '$app/paths';
   const props = $props();
+  // const name: string = "test";
 </script>
 
 <style>
-  div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%; 
-  }
-
-  .head-navbar {
-    /* display: flex; */
-    outline: 2px solid red;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-
-  }
 </style>
 
-<div id={props.id}>
-  {#each props.tabNames as name (name)}
-    <div class="head-navbar">
-      <h2>
-        <a href={resolve(`/#${name.replace(" ", "")}`)}>
-          {name}
-        </a>
-      </h2>
-    </div>
-  {/each}
-</div>
-
+<Navbar fluid={true} class="sticky inset-s-0 top-0 z-50 w-full bg-white px-0 py-2.5 sm:px-4 dark:bg-gray-80 ">
+  <NavUl classes={{ul: "flex gap-12 justify-center"}}>
+    {#each props.tabNames as name (name)}
+      <NavLi href={resolve(`/#${name.replace(" ", "")}`)}>{name}</NavLi>
+    {/each}
+  </NavUl>
+</Navbar>

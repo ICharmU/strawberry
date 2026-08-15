@@ -18,26 +18,22 @@
 </script>
 
 <style>
-  :global(.subtitle) {
+  /* :global(.subtitle) {
     text-align: center;
     font-weight: 800;
   }
 
   :global(div) {
-    /* display: flex;
-    flex-direction: column; */
     border: 2px solid red;
   }
 
   section {
     padding-top: 40px;
     padding-bottom: 40px;
-  }
+  } */
 </style>
 
-<section>
-  <HomeNavbar tabNames={tabNames}/>
-</section>
+<HomeNavbar tabNames={tabNames}/>
 <section>
   <About id={tabNames[0]} name="Sean Harmon"/>
 </section>
