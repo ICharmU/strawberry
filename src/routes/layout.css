@@ -1,1 +1,9 @@
 @import 'tailwindcss';
+
+@font-face {
+    font-family: 'HelloChristmas';
+    src: url('/fonts/HelloChristmas-nRjqV.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

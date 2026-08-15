@@ -41,7 +41,7 @@
         distance: 150,
         enable: true,
         opacity: 0.8,
-        width: 9,
+        width: 1,
       },
       move: {
         enable: true,
@@ -76,11 +76,21 @@
 
   .bg-shift-active {
     background-color: #0400ff; /* Fallback base color for blank renders */
-    animation: bgShift 8s ease-in-out infinite;
+    animation: bgShift 16s ease-in-out infinite;
   }
+
 
   .desc {
     text-align: center;
+  }
+
+  /* @font-face {
+    font-family: 'HelloChristmas2';
+    src: url('/fonts/HelloChristmas-1Ge70.ttf') format('truetype');
+  } */
+
+  :global(.christmas-heading) {
+    font-family: 'HelloChristmas', cursive !important;
   }
 </style>
 
@@ -92,9 +102,14 @@
       options={particlesOptions}
     />
   {/if}
+
+  <div id={props.id} class="relative z-10 text-center text-white">
+    <Heading tag="h1" class="christmas-heading">Sean Harmon</Heading>
+    <!-- <Heading tag="h1" class="font-heading text-5xl mb-4">Sean Harmon</Heading> -->
+  </div>
 </div>
 
-<div id={props.id}>
+<!-- <div id={props.id}>
   <div class="subtitle">
     <h1>
       {props.name}
@@ -105,4 +120,4 @@
       Agents, Natural Language and Automation are my favorite topics. I enjoy diving into the deep end with new tech stacks.
     </p>
   </div>
-</div>
+</div> -->

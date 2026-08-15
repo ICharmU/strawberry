@@ -4,7 +4,9 @@ export default {
     content: ['./src/**/*.{html,js,svelte,ts}'],
     theme: {
         extend: {
-
+            fontFamily: {
+                heading: ['HelloChristmas', 'sans-serif']
+            }
         }
     },
     plugins: [],
