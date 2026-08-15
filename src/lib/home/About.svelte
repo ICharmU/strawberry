@@ -84,8 +84,7 @@
     font-size: clamp(4rem, 20vw, 20rem);
   }
 
-  .fairfax-p {
-    font-family: 'Fairfax' !important;
+  .desc {
     font-size: clamp(2rem, 4vw, 4rem);
   }
 </style>
@@ -101,7 +100,7 @@
 
   <div class="relative z-10 text-center text-white">
     <Heading tag="h1" class="christmas-heading text-5xl pt-12 my-28 pointer-events-none">Sean Harmon</Heading>
-    <p class="fairfax-p ml-12 mr-12 pb-20 pointer-events-none">
+    <p class="fairfax desc ml-12 mr-12 pb-20 pointer-events-none">
       Agents, Natural Language and Automation are my favorite topics. I enjoy diving into the deep end with new tech stacks.
     </p>
   </div>
