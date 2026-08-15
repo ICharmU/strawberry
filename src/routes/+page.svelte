@@ -33,6 +33,7 @@
   } */
 </style>
 
+<div id="About"></div>
 <HomeNavbar tabNames={tabNames}/>
 <About id={tabNames[0]} name="Sean Harmon"/>
 <WorkExperience id={tabNames[1].replace(" ", "")} name="Work Experience"/>

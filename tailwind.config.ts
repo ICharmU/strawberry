@@ -5,7 +5,8 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                heading: ['HelloChristmas', 'sans-serif']
+                heading: ['HelloChristmas', 'sans-serif'],
+                desc: ['Fairfax', 'sans-serif'],
             }
         }
     },

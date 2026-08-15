@@ -2,7 +2,15 @@
 
 @font-face {
     font-family: 'HelloChristmas';
-    src: url('/fonts/HelloChristmas-nRjqV.otf') format('opentype');
+    src: url('/fonts/HelloChristmas.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Fairfax';
+    src: url("fonts/Fairfax.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
