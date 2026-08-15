@@ -67,8 +67,8 @@
 
 </style>
 
-<div id={props.id}><br></div>
-<div class="relative z-50 sec mx:40 flex flex-col mb-20">
+<div id={props.id} class="relative z-50 sec mx:40 flex flex-col mb-20">
+  <br>
   <div class="subtitle">
     <h2>
       {props.name}

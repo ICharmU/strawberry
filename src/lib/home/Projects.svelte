@@ -11,7 +11,8 @@
   }
 </style>
 
-<div id={props.id}>
+<div id={props.id} class="mt-18">
+  <br>
   <div class="subtitle">
     <h2>
       {props.name}
