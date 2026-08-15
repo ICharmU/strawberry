@@ -28,11 +28,6 @@
     margin-bottom: 1em;
   }
 
-  .sec {
-    width: clamp(200px, 50%, 1080px);
-    margin: 0 auto;
-  }
-
   .job-title {
     font-family: 'Fairfax';
     font-size: 3em;
@@ -62,13 +57,12 @@
   .description {
     font: 400 1.5em 'Fairfax';
     width: 90%;
-
   }
 
 </style>
 
 <div id={props.id} class="relative z-50 sec mx:40 flex flex-col mb-20">
-  <br>
+  <br><br>
   <div class="subtitle">
     <h2>
       {props.name}
