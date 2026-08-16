@@ -4,12 +4,67 @@
   const props = $props();
 
   const projects: Record<string, string>[] = [
-    {title: "project 1", desc: "project 1 desc", tag: "A"},
-    {title: "project 2", desc: "project 2 desc", tag: "B"},
-    {title: "project 3", desc: "project 3 desc", tag: "C"},
-    {title: "project 4", desc: "project 4 desc", tag: "D"},
-    {title: "project 5", desc: "project 5 desc", tag: "E"},
-    {title: "project 6", desc: "project 6 desc", tag: "F"},
+    {
+      title: "Urban Heat Island Effect", 
+      desc: `
+      As part of a team I verified the urban heat island effect by visually comparing the relationship between temperature and vegetation in
+      metropolitan cities in different contents. I created custom univariate and bivariate plots in JavaScript to highlight similarities across regions, but also between
+      variables in the same region. 
+      `, 
+      repo: "https://github.com/ICharmU/dsc_106_final_project", 
+      webpage: "https://icharmu.github.io/dsc_106_final_project/", 
+      tag: "Earth Engine, .tif, Scrollama, Python, JavaScript"
+    },
+    {
+      title: "Shrub Mapping", 
+      desc: `With a partner I developed a reproducible feature extraction pipeline to estimate where
+      shrubs are located across California. We processed LIDAR, point cloud and meteorological data 
+      to create labels which were used to train a U-Net CNN for further shrub classification. We 
+      emphasized feature engineering, deriving features such as wavelets (various decomposition levels), 
+      local co-occurrence matrices, 2D projection of ALS data, as well as general land features (e.g. hillshade, aspect).
+      `, 
+      repo: "https://github.com/ICharmU/shrub", 
+      webpage: "https://github.com/ICharmU/shrub/blob/main/materials/flowchart.pdf", 
+      tag: "Earth Engine, sklearn, Folium, Pandas, PyTorch, OpenCV"
+    },
+    {
+      title: "Power Outage Analysis", 
+      desc: `
+      With the prevalence of digital technologies today power grids have great demands. To better understand
+      when the demands have been exceed I researched power grids and conducted analyses on power outages
+      across the US. I estimated missingness mechanisms and removed correlated features to fit a 
+      linear model. 
+      `, 
+      repo: "https://github.com/ICharmU/power_outage_analysis", 
+      webpage: "https://icharmu.github.io/power_outage_analysis/", 
+      tag: "SciPy, sklearn, Pandas, Plotly, regex"
+    },
+    {
+      title: "Receipt Parser", 
+      desc: `
+      To better track my food spending habits for the upcoming year I scraped my school card vendor's 
+      transaction portal. This initially seemed to be an easy task as I could repeatedly scrape each list of transactions
+      and parse the extracted HTML to reproduce the original table. However, the vendor portal only allowed 25 interactions 
+      (assumed to be database queries) per login, which required me to scrape from multiple tabs rather than one. 
+      `, 
+      repo: "https://github.com/ICharmU/Receipt-Parser", 
+      webpage: "https://app.powerbi.com/view?r=eyJrIjoiMzNlZTVmNmUtNDY1Ni00YWI3LWJkNDUtZjdhZmFmNGQ3N2I3IiwidCI6IjhhMTk4ODczLTRmZWMtNGU3Ni04MTgyLWNhNDc5ZWRiYmQ2MCIsImMiOjZ9", 
+      tag: "Selenium, BeautifulSoup, regex, Pandas"
+    },
+    // {
+    //   title: "project 5", 
+    //   desc: "project 5 desc", 
+    //   repo: "", 
+    //   webpage: "", 
+    //   tag: "E"
+    // },
+    // {
+    //   title: "project 6", 
+    //   desc: "project 6 desc", 
+    //   repo: "", 
+    //   webpage: "", 
+    //   tag: "F"
+    // },
   ]
 
   const slides: Record<string, string>[][] = [];
@@ -67,6 +122,10 @@
                     {project.tag}
                   </span>
                   <h3 class="text-2xl font-bold mb-2">{project.title}</h3>
+                  <h3 class="text-2xl font-bold mb-2 text-blue-400">
+                    <a href={project.repo} rel=external target="_blank">{project.repo != "" ? "Repo" : ""}</a>
+                    <a href={project.webpage} rel=external target="_blank">{project.webpage != "" ? "Webpage" : ""}</a>
+                  </h3>
                   <p class="text-gray-300 text-sm">{project.desc}</p>
                 </div>
               </div>
