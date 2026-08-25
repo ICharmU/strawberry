@@ -4,22 +4,26 @@
   const languages: string[] = [
     "Python",
     "SQL",
-    "Svelte",
     "JavaScript",
+    "Svelte",
     "bash",
     "regex",
     "git",
     "Docker",
   ];
   const dataProcessing: string[] = [
-    "PySpark",
-    "Dask",
+    "Playwright",
     "Selenium",
     "BeautifulSoup",
     "Pandas",
     "numpy",
     "mpl",
     "Plotly",
+  ];
+  const parallelProcessing: string[] = [
+    "PySpark",
+    "Dask",
+    "asyncio"
   ];
   const aiml: string[] = [
     "deepagents",
@@ -28,6 +32,7 @@
     "scikit-learn",
     "statsmodels",
     "PyTorch",
+
   ];
   const analytics: string[] = [
     "Power BI", 
@@ -64,10 +69,14 @@
     font-weight: 600;
   }
 
+  .skills {
+    background-color: #c97979c0;  
+  }
+
 
 </style>
 
-<div id={props.id} class="mt-32 flex flex-col relative w-full max-w-5xl mx-auto">
+<div id={props.id} class="mt-32 flex flex-col relative w-full max-w-5xl mx-auto sec">
   <br><br>
   <div class="subtitle mb-12">
     <h2>
@@ -78,6 +87,10 @@
     <div id="languages">
       <h3 class="skill-subtitle">Languages</h3>
       <p class="skill-desc">{languages.join(", ")}</p>
+    </div>
+    <div id="data-processing">
+      <h3 class="skill-subtitle">Parallel Processing</h3>
+      <p class="skill-desc">{parallelProcessing.join(", ")}</p>
     </div>
     <div id="data-processing">
       <h3 class="skill-subtitle">Data Processing</h3>

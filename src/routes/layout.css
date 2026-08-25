@@ -30,4 +30,10 @@
 .sec {
     width: clamp(200px, 50%, 1080px);
     margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+body {
+    background-color: #c97979;
 }

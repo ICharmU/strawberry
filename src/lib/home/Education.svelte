@@ -20,6 +20,7 @@
   .institutions {
     display: flex;
     flex-direction: column;
+    background-color: #c97979c0;
   }
 
   #ucsd, #lapc {
@@ -38,15 +39,15 @@
   }
 
   #ucsd .degree-type {
-    color: rgb(10, 96, 194);
+    color: #03629C;
   }
 
   #ucsd .inst-name {
-    color: rgb(197, 185, 8);
+    color: #FFCD00;
   }
 
   #lapc .inst-name {
-    color: rgb(230, 18, 18)
+    color: rgb(224, 21, 21);
   }
 
   .inst-name {
@@ -64,11 +65,24 @@
   }
   
   .inst-desc > h4 {
-    color: rgb(6, 51, 71);
+    color: rgb(33, 81, 102);
+  }
+
+  .backname {
+    line-height: 0;
+    padding: 1px;
+  }
+
+  #ucsd .backname {
+    background: #182B49;
+  }
+
+  #lapc .backname {
+    background: rgb(100,100,100);
   }
 </style>
 
-<div id={props.id} class="flex flex-col relative w-full max-w-5xl mx-auto">
+<div id={props.id} class="flex flex-col relative w-full max-w-5xl mx-auto sec">
   <br><br>
   <div class="subtitle">
     <h2>
@@ -79,13 +93,13 @@
     <div id="ucsd">
       <div class="inst-title">
         <div class="degree-type">
-          B.S. Data Science
+          <span class="backname">B.S. Data Science</span>
         </div>
         <div class="inst-name">
-          University of California, San Diego
+          <span class="backname">University of California, San Diego</span>
         </div>
         <div class="inst-date">
-          08/2024-Present (expected March 2028)
+          08/2024-Present (expected June 2028)
         </div>
       </div>
       <div class="inst-desc mt-4">
@@ -102,10 +116,10 @@
     <div id="lapc">
       <div class="inst-title">
         <div class="degree-type">
-          Dual Enrollment
+          <span class="backname">Dual Enrollment</span>
         </div>
         <div class="inst-name">
-          Los Angeles Pierce College
+          <span class="backname">Los Angeles Pierce College</span>
         </div>
         <div class="inst-date">
           02/2024-06/2024

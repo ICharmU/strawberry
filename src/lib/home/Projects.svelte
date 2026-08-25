@@ -93,7 +93,7 @@
   } */
 </style>
 
-<div id={props.id} class="mt-18 mb-40 relative w-full max-w-5xl mx-auto px-12 ">
+<div id={props.id} class="mt-18 mb-40 relative w-full max-w-5xl mx-auto px-12">
   <br><br>
   <div class="subtitle">
     <h2>

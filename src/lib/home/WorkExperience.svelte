@@ -26,6 +26,7 @@
     flex-direction: column;
     margin-top: 2em;
     margin-bottom: 1em;
+    background-color: #c97979c0;  
   }
 
   .job-title {
@@ -40,7 +41,7 @@
     margin-top: -0.5em;
     font-family: 'Fairfax';
     font-size: 2em;
-    color: rgb(59, 165, 86);
+    color: rgb(26, 48, 27);
   }
 
   .company-date {
@@ -51,7 +52,7 @@
   .tools {
     font-family: 'Fairfax';
     font-size: 1.5em;
-    color: rgb(136, 19, 19);
+    color: rgb(14, 8, 48);
   }
 
   .description {
@@ -61,7 +62,7 @@
 
 </style>
 
-<div id={props.id} class="relative z-50 sec mx:40 flex flex-col mb-20">
+<div id={props.id} class="relative z-50 mx:40 flex flex-col mb-20 sec">
   <br><br>
   <div class="subtitle">
     <h2>
