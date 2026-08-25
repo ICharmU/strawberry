@@ -15,6 +15,20 @@
       webpage: "https://icharmu.github.io/dsc_106_final_project/", 
       tag: "Earth Engine, .tif, Scrollama, Python, JavaScript"
     },
+      {
+      title: "Receipt Parser", 
+      desc: `
+      To better track my food spending habits for the upcoming year I scraped my school card vendor's 
+      transaction portal. This initially seemed to be an easy task as I could repeatedly scrape each list of transactions
+      and parse the extracted HTML to reproduce the original table. However, the vendor portal only allowed 25 interactions 
+      (assumed to be database queries) per login, which required me to scrape from multiple tabs rather than one. 
+      I learned about semaphores and used them to process up to 15 pages at a time which sped up scraping times by
+      over 10x when combined with switching from Selenium to Playwright for more efficient wait loading.
+      `, 
+      repo: "https://github.com/ICharmU/Receipt-Parser", 
+      webpage: "https://app.powerbi.com/view?r=eyJrIjoiMzNlZTVmNmUtNDY1Ni00YWI3LWJkNDUtZjdhZmFmNGQ3N2I3IiwidCI6IjhhMTk4ODczLTRmZWMtNGU3Ni04MTgyLWNhNDc5ZWRiYmQ2MCIsImMiOjZ9", 
+      tag: "Playwright, asyncio, BeautifulSoup, Pandas, regex"
+    },
     {
       title: "Shrub Mapping", 
       desc: `With a partner I developed a reproducible feature extraction pipeline to estimate where
@@ -38,18 +52,6 @@
       repo: "https://github.com/ICharmU/power_outage_analysis", 
       webpage: "https://icharmu.github.io/power_outage_analysis/", 
       tag: "SciPy, sklearn, Pandas, Plotly, regex"
-    },
-    {
-      title: "Receipt Parser", 
-      desc: `
-      To better track my food spending habits for the upcoming year I scraped my school card vendor's 
-      transaction portal. This initially seemed to be an easy task as I could repeatedly scrape each list of transactions
-      and parse the extracted HTML to reproduce the original table. However, the vendor portal only allowed 25 interactions 
-      (assumed to be database queries) per login, which required me to scrape from multiple tabs rather than one. 
-      `, 
-      repo: "https://github.com/ICharmU/Receipt-Parser", 
-      webpage: "https://app.powerbi.com/view?r=eyJrIjoiMzNlZTVmNmUtNDY1Ni00YWI3LWJkNDUtZjdhZmFmNGQ3N2I3IiwidCI6IjhhMTk4ODczLTRmZWMtNGU3Ni04MTgyLWNhNDc5ZWRiYmQ2MCIsImMiOjZ9", 
-      tag: "Selenium, BeautifulSoup, regex, Pandas"
     },
     // {
     //   title: "project 5", 
